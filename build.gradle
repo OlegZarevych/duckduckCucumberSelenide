@@ -12,8 +12,14 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    testCompile 'io.cucumber:cucumber-java8:4.7.4'
-    testCompile 'io.cucumber:cucumber-junit:4.7.4'
-    testCompile 'com.codeborne:selenide:5.5.0'
+    compile group: 'junit', name: 'junit', version: '4.12'
+    compile 'io.cucumber:cucumber-java8:4.7.4'
+    compile 'io.cucumber:cucumber-junit:4.7.4'
+    compile 'com.codeborne:selenide:5.5.0'
 }
+
+test {
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
+}
+
