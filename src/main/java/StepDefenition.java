@@ -5,6 +5,8 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class StepDefenition implements En {
 
+
+
     @Given("the search page is opened")
     public void the_search_page_is_open(){
 
